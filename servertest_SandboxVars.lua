@@ -315,7 +315,7 @@ SandboxVars = {
     -- 4 = Often
     GeneratorSpawning = 3,
     -- How much fuel is consumed per in-game hour. Minimum=0.00 Maximum=100.00 Default=1.00
-    GeneratorFuelConsumption = 1.0,
+    GeneratorFuelConsumption = 0.5,
     -- Increase/decrease probability of discovering randomized safe houses on the map: either burnt out, containing loot stashes, dead survivor bodies etc. Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -570,7 +570,7 @@ SandboxVars = {
         -- Zombies that have not seen/heard player can attack doors and constructions while roaming.
         ThumpNoChasing = false,
         -- Governs whether or not zombies can destroy player constructions and defences.
-        ThumpOnConstruction = false,
+        ThumpOnConstruction = true,
         -- Governs whether zombies are more active during the day, or whether they act more nocturnally.  Active zombies will use the speed set in the "Speed" setting. Inactive zombies will be slower, and tend not to give chase. Default=Both
         -- 1 = Both
         -- 2 = Night
@@ -613,5 +613,60 @@ SandboxVars = {
         RallyGroupSeparation = 15,
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 3,
+    },
+    StockDamage = {
+        -- Minimum=0.00 Maximum=200.00 Default=15.00
+        FirearmDamage = 15.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.45
+        StockEndurance = 0.45,
+        StockEnduranceBoolean = true,
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
+        ReduceCondition = 0.0,
+    },
+    bikinitools = {
+        EnableGetKeyContext = false,
+        EnableOpenSesame = false,
+        EnableVehicleRemover = false,
+        EnableCellVehicleRemover = false,
+        EnableRepairContext = false,
+        EnableSkinSwitcher = false,
+        EnableVehicleSpawner = false,
+        EnableTrunkUnlocker = false,
+        EnableGravelBuddy = true,
+        EnableGardener = true,
+        AllowTYLPlantRemoval = true,
+        EnableLumberjack = true,
+        EnableFarmer = true,
+        EnableContainerUnloader = true,
+        EnableHomeWrecker = false,
+        EnableCorpseStacker = true,
+        EnableVehicleItemHide = true,
+    },
+    Advanced_trajectory = {
+        aimpoint = true,
+        Enablerange = true,
+        Enablethrow = true,
+        playerdamage = false,
+        -- Minimum=0.00 Maximum=20.00 Default=0.70
+        fireoffset = 0.7,
+        -- Minimum=-100.00 Maximum=100.00 Default=-9.00
+        maxaimnum = -9.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.30
+        moveeffect = 1.3,
+        -- Minimum=0.00 Maximum=100.00 Default=0.70
+        turningeffect = 0.7,
+        -- Minimum=0.00 Maximum=100.00 Default=1.10
+        reducespeed = 1.1,
+        -- Minimum=0.00 Maximum=3.00 Default=1.20
+        bulletspeed = 1.2,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        bulletdistance = 1.0,
+        -- Minimum=0 Maximum=100 Default=5
+        shotgunnum = 7,
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        shotgundivision = 0.08,
+        callshot = true,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        ATY_damage = 1.0,
     },
 }
